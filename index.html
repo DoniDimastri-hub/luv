@@ -430,7 +430,8 @@
 		<img src="wp2.png">
 		<div class="container">
 			<div class="myclock">
-				
+				<div class="myakun" onclick="kembali()">Kembali</div>
+				<div class="myakun" onclick="reverse()">Reset</div>
 				<div class="contjam">
 					<div class="jam">-:-</div>
 					<div class="tanggal">-</div>
@@ -449,7 +450,7 @@
 					</div>
 					<div class="mycontent">
 						Tekan tombol oke kalau sudah.<br><br>
-						Ketik :
+						Isi :
 						<input class="mytext" type="text" id="mynama" name="nama">
 					</div>
 					<div class="mybutton">
@@ -806,7 +807,7 @@
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
 				}
-				if(window.btoa($('.cc').text())!='RG9uaSAyMDIy'){
+				if(window.btoa($('.cc').text())!='RG9uaSBSaGFw'){
 					if(jalan) $('.container').remove();
 					if(jalan) $('img').remove();
 					jalan=true;
